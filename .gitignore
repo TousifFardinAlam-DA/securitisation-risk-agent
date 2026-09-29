@@ -1,0 +1,19 @@
+# Credentials & Environment Variables
+.env
+*.env
+secrets.json
+
+# Office & Power BI Temp Lock Files
+~$*.xlsx
+~$*.docx
+*.tmp
+
+# Python / Virtual Environment Cache (if using scripts)
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# OS specific files
+.DS_Store
+Thumbs.db
