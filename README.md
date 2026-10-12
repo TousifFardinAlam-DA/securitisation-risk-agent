@@ -71,7 +71,6 @@ The core relational engine utilizes a 1-to-many Star Schema to prevent circular 
 
 ## 💻 Core DAX Implementations
 
-### Expected Credit Loss (ECL) Calculation
 ```dax
 Total Portfolio ECL = 
 SUMX (
