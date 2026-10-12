@@ -78,3 +78,12 @@ SUMX (
     Fact_Auto_Loans,
     Fact_Auto_Loans[EAD] * Fact_Auto_Loans[PD_Estimate] * Fact_Auto_Loans[LGD_Estimate]
 )
+
+Stressed Net Collections = 
+MAX ( 0, [Total Monthly Collections] - [Stressed Total ECL] )
+
+Mezzanine Tranche Payout = 
+VAR MezzTarget = [Total Monthly Collections] * 0.10
+VAR CashAfterSenior = MAX ( 0, [Stressed Net Collections] - [Senior Tranche Payout] )
+RETURN
+MIN ( CashAfterSenior, MezzTarget )
