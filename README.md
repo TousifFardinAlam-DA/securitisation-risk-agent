@@ -41,19 +41,23 @@ The core relational engine utilizes a 1-to-many Star Schema to prevent circular 
 ## 📊 Dashboard Modules & Analytical Deliverables
 
 ### 1. Portfolio Overview
+![Portfolio Overview](Portfolio%20Overview.png)
 * Executive KPIs: Total Balance, Active Loan Count, WAC, WAM, Pool Factor, and Average LTV.
 * Exposure stratifications: State-level concentration map and vehicle type distribution.
 
 ### 2. Delinquency Surveillance & Roll Rates
+![Delinquency & Roll Rates](Delinquency%20%26%20Roll%20Rates.png)
 * High-level delinquency cards: ₹252.17M Current Performing, ₹45M 30+ DPD, ₹18M 90+ DPD.
 * Credit migration tracking: Multi-period line chart plotting DPD bucket shifts.
 * **Month-over-Month Roll Rate Transition Matrix:** Heatmap visual calculating transition probabilities (% of row total) between prior and current DPD states.
 
 ### 3. Vintage & Static Pool Loss Curves
+![Vintage & Static Loss](Vintage%20%26%20Static%20Loss.png)
 * Static pool net cumulative loss rates mapped against loan seasoning (**Months on Book**).
 * Visualizes classic default seasoning (S-curves) highlighting loss maturation between months 12 and 30.
 
 ### 4. IFRS 9 ECL Provisioning Framework
+![IFRS 9 ECL Provisioning](IFRS%209%20ECL%20Provisioning.png)
 * Impairment reserves segmented by accounting stages:
   * **Stage 1 (Performing):** ₹3M (12-month ECL, <30 DPD)
   * **Stage 2 (Underperforming):** ₹2M (Lifetime ECL, 30–89 DPD)
@@ -61,6 +65,7 @@ The core relational engine utilizes a 1-to-many Star Schema to prevent circular 
 * Provision Coverage Ratio KPI: 3.67% of total balance.
 
 ### 5. Cash Flow Waterfall & Stress Testing Simulator
+![Waterfall & Stress Testing](Waterfall%20%26%20Stress%20Testing.png)
 * **Sequential Priority of Payments:** Allocates monthly collections (₹224M) sequentially:
   * Senior Tranche: 85% priority target (₹190.67M)
   * Mezzanine Tranche: 10% target (₹22.40M)
